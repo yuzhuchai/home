@@ -1,16 +1,16 @@
 console.log('connected');
 
 
-let activeDiv 
-
+let activeMenu 
+let activeArchive
 $('.button').click(function(){
 	// console.log('clicked')
 	$('.active').removeClass('active');
 	$(this).addClass('active');
-	activeDiv = $(this).attr('id');
-	console.log(activeDiv)
+	activeMenu = $(this).attr('id');
+	console.log(activeMenu)
 	$('.activeContainer').removeClass('.activeContainer').addClass('inactiveContainer');
-	$(`#${activeDiv}Container`).addClass('activeContainer').removeClass('inactiveContainer');
+	$(`#${activeMenu}Container`).addClass('activeContainer').removeClass('inactiveContainer');
 })
 
 
@@ -23,11 +23,14 @@ $('.archiveIndexBlock').mousemove(function(){
 
 
 $('.archiveIndexBlock').click(function(){
-	console.log('cliced')
+	activeArchive = $(this).attr('id');
+
+	console.log(activeArchive)
 	$('#dimEffectContainer').css('display','block')
 })
 
 
 $('#dimEffectContainer').click(function(){
-	$('#dimEffectContainer').css('display','none')
+	$(this).css('display','none')
 })
+
