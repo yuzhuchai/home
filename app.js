@@ -24,4 +24,10 @@ $('.archiveIndexBlock').mousemove(function(){
 
 $('.archiveIndexBlock').click(function(){
 	console.log('cliced')
+	$('#dimEffectContainer').css('display','block')
+})
+
+
+$('#dimEffectContainer').click(function(){
+	$('#dimEffectContainer').css('display','none')
 })

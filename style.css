@@ -152,20 +152,24 @@ body{
 	left:0;
 	z-index: 1000;
 	background: rgba(255,255,255,0.8);
+	display: none;
 }
 
 #archiveInfoContiner{
-	width: 60%;
-	height:100%;
-	margin: auto;
-	/*margin-top: auto;*/
+/*	width: 100%;
+	height:100%;*/
+	align-items: center;
 }
 
 
 #imgContainer {
-	
+	/*width: 80vh;*/
+	height: 80vh;
 }
 
+#infoContainer{
+	/*width: 80vh;*/
+}
 
 /*below are function components*/
 
@@ -275,12 +279,17 @@ body{
 }
 
 .flex-row {
-	flex-direction: row
+	flex-direction: row;
+}
+
+.flex-column {
+	flex-direction: column;
 }
 
 .center{
 	margin: auto;
 }
+
 .item-center {
 	align-items: center;
 }
