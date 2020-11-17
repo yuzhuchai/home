@@ -1,8 +1,12 @@
 console.log('connected');
+console.log(a01);
+
 
 
 let activeMenu 
 let activeArchive
+
+
 $('.button').click(function(){
 	// console.log('clicked')
 	$('.active').removeClass('active');
