@@ -1,5 +1,5 @@
 console.log('connected');
-console.log(a01);
+// console.log(a01);
 
 
 
@@ -27,9 +27,9 @@ $('.archiveIndexBlock').mousemove(function(){
 
 
 $('.archiveIndexBlock').click(function(){
-	activeArchive = $(this).attr('id');
+	activeArchive = Number($(this).attr('id').substring(7,9));
+	console.log(archiveList[activeArchive-1])
 
-	console.log(activeArchive)
 	$('#dimEffectContainer').css('display','block')
 })
 
