@@ -161,9 +161,7 @@ body{
 	align-items: center;
 }
 
-
-#imgContainer {
-	/*width: 80vh;*/
+.arcImg {
 	height: 80vh;
 }
 

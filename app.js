@@ -27,14 +27,21 @@ $('.archiveIndexBlock').mousemove(function(){
 
 
 $('.archiveIndexBlock').click(function(){
-	activeArchive = Number($(this).attr('id').substring(7,9));
-	console.log(archiveList[activeArchive-1])
-
+	let index = Number($(this).attr('id').substring(7,9));
+	let activeArchive = archiveList[index-1]
+	// console.log(activeArchive)
 	$('#dimEffectContainer').css('display','block')
+	if(activeArchive.type == 'painting'){
+		$('#dimEffectContainer').prepend(`<img src=${activeArchive.link} class='arcImg'>`)
+	} else if (activeArchive.type == 'video'){
+		console.log(activeArchive.youtube)
+		$('#dimEffectContainer').prepend(`<object data=${activeArchive.youtube} class='arcImg'></object>`)
+	}
 })
 
 
 $('#dimEffectContainer').click(function(){
 	$(this).css('display','none')
+	$('#dimEffectContainer').empty()
 })
 

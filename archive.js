@@ -1,6 +1,7 @@
 const archiveList = [
 
 {
+	type: 'painting',
 	title : 'Untitled 04',
 	year :  '2017',
 	medium : 'Oil, arcylic, pen on canvas',
@@ -9,6 +10,7 @@ const archiveList = [
 },
 
 {
+	type: 'painting',
 	title : 'Untitled 03',
 	year : '2017',
 	medium : 'oil, acrylic on 2 wood panels',
@@ -17,6 +19,7 @@ const archiveList = [
 },
 
 {
+	type: 'painting',
 	title : 'Untitled 01',
 	year : '2017',
 	medium : 'oil, acrylic on canvas',
@@ -25,6 +28,7 @@ const archiveList = [
 },
 
 {
+	type: 'painting',
 	title : 'Untitled 02',
 	year : '2017',
 	medium : 'oil, acrylic on canvas',
@@ -32,6 +36,7 @@ const archiveList = [
 	link : 'https://yuzhuchai.com/assets/archives/painting/04.jpg'
 },
 {
+	type: 'video',
 	title : 'Poemhead ',
 	year : '2017',
 	medium : 'video',
@@ -40,6 +45,7 @@ const archiveList = [
 	youtube : 'https://youtu.be/kUEi8yPjr0k'
 },
 {
+	type: 'video',
 	title : 'Collective Education',
 	year : '2017',
 	medium : 'Video, projection ',
@@ -49,6 +55,7 @@ const archiveList = [
 },
 
 {
+	type: 'video',
 	title : 'Tango',
 	year : '2017',
 	medium : 'video, found footages',
@@ -58,6 +65,7 @@ const archiveList = [
 },
 
 {
+	type: 'video',
 	title : 'Do I dare to eat an apple? ',
 	year : '2017',
 	medium : 'video',
