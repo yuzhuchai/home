@@ -1,0 +1,277 @@
+body{
+	margin: 0;
+	font-family: 'Helvetica Neue';
+}
+
+
+/*this is all header styling*/
+#headerContainer{
+	background: white;
+	padding:3%;
+	display:flex;
+	justify-content: space-between;
+	font-weight: bolder;
+	font-size: 1em;
+	position: sticky;
+	top:0;
+	z-index: 100;
+
+}
+
+#menuContainer {
+	justify-content: flex-end;
+	/*z-index: 100;*/
+}
+
+.menuItem{
+	margin-left: 4%;
+	/*z-index: 100;*/
+}
+
+
+.archiveIndexBlock{
+	/*filter: grayscale(0%);*/
+	width: 26%;
+	margin-bottom: 4%;
+	background-size: 100%;
+	background-repeat: none;
+	position: relative;
+}
+
+
+#archivesContainer {
+	justify-content: space-between;
+	padding-left:8%;
+	padding-right:8%;
+}
+
+
+#archive03 {
+	background-image: url('https://yuzhuchai.com/assets/indexpixs/03index.png');
+}
+
+#archive04 {
+	background-image: url('https://yuzhuchai.com/assets/indexpixs/04index.png');
+}
+
+#archive02 {
+	background-image: url('https://yuzhuchai.com/assets/indexpixs/02index.png');
+
+}
+
+#archive01 {
+	background-image: url('https://yuzhuchai.com/assets/indexpixs/01index.png');
+
+}
+
+#archive05 {
+	background-image: url('https://yuzhuchai.com/assets/indexpixs/plumIndex.png');
+
+}
+
+#archive06 {
+	background-image: url('https://yuzhuchai.com/assets/indexpixs/collectiveIndex.png');
+
+}
+
+#archive07 {
+	background-image: url('https://yuzhuchai.com/assets/indexpixs/tangoIndex.png');
+
+}
+
+#archive08 {
+	background-image: url('https://yuzhuchai.com/assets/indexpixs/appleIndex.png');
+
+}
+
+.titleText {
+	position: absolute;
+	display: block;
+	width:100%;
+	top: 50%;
+	/*bottom:50%;*/
+	left: 0;
+	transform: translate(0, -50%);
+	/*right: 0;*/
+	text-align: center;
+	font-weight: bolder;
+	font-size: 2.5em;
+	/*z-index: -1;*/
+}
+
+
+#archive03Text{
+	/*color: #FFE60A;*/
+	color: #ADFF00;
+	font-size: 3em;
+}
+
+#archive05Text{
+	color: #4C48FF;
+	font-size: 3em;
+}
+
+#archive06Text{
+	color: #F0FF48;
+	font-size: 1.8em;
+}
+
+#archive04Text{
+	color: #00E0FF;
+	font-size: 3em;
+}
+
+#archive07Text{
+	color: #48FFA7;
+	font-size: 3.5em;
+}
+
+#archive08Text {
+	color: #FF0000;
+	font-size: 1.5em;
+
+}
+
+#archive02Text {
+	color: #48FF91;
+	font-size: 3em;
+
+}
+
+#archive01Text {
+	color: #CC00FF;
+	font-size: 3em;
+}
+
+
+
+/*below are function components*/
+
+.button:hover{
+	outline: 3px solid black;
+}
+
+.active {
+	outline: 3px solid black;
+}
+
+.activeContainer {
+	display: flex;
+}
+
+.inactiveContainer {
+	display: none;
+}
+
+
+.filterDiv{
+	width: 100%;
+	padding-top:100%;
+	background: rgba(196,196,196,0.7);
+	/*z-index: -2;*/
+}
+
+.filterDiv:hover{
+	display: none;
+}
+
+.mouseText {
+	display: none;
+	background: white;
+	outline: black 2px solid;
+	font-size: 1em;
+	font-weight: bolder;
+	z-index: 10;
+}
+.archiveIndexBlock:hover {
+	cursor: pointer;
+}
+
+.archiveIndexBlock:hover .mouseText{
+	display: inline-block;
+	position:fixed;
+}
+
+
+
+/*below are styling components*/
+
+.border{
+	border: 1px solid black;
+}
+
+.inline {
+	display: inline-block;
+}
+
+
+.width-100{
+	width:100%;
+}
+
+.width-70{
+	width:70%;
+}
+
+
+.width-50{
+	width: 49%;
+}
+
+.width-20 {
+	width: 20%;
+}
+
+
+.pad-3 {
+	padding: 3%;
+}
+
+.pad-5{
+	padding: 5%;
+}
+
+.pad-8{
+	padding: 8%;
+}
+
+.mb-5{
+	margin-bottom: 5%;
+}
+
+.block {
+	display: block;
+}
+
+
+.flex {
+	display: flex;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.flex-row {
+	flex-direction: row
+}
+
+.center{
+	margin: auto;
+}
+.item-center {
+	align-items: center;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-just {
+	text-align: justify;
+}
+
+.absolute {
+	position: absolute;
+}
+
