@@ -38,10 +38,14 @@ $('.archiveIndexBlock').click(function(){
 		$('#con').append(`<div class='infoText'><span class='bold'>${activeArchive.title}</span>, ${activeArchive.year}<br/>${activeArchive.medium}<br/>${activeArchive.size}</div>`)
 	} else if (activeArchive.type == 'video'){
 		console.log(activeArchive.youtube)
-		$('#con').prepend(`<object data=${activeArchive.youtube} class='arcImg'></object>`)
+		$('#con').prepend(`<video class='arcImg' controls><source src=${activeArchive.link} typr='video/mp4'>your browser does not support the video tag, view on <a src=${activeArchive.youtube}>youtube</a></video>`)
 		$('#con').append(`<div class='infoText'><span class='bold'>${activeArchive.title}</span>, ${activeArchive.year}<br/>${activeArchive.size}<br/>${activeArchive.medium}</div>`)
 	}
 })
+
+
+// video playing has a bug
+
 
 
 $('#dimEffectContainer').click(function(){
