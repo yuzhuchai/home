@@ -27,21 +27,25 @@ $('.archiveIndexBlock').mousemove(function(){
 
 
 $('.archiveIndexBlock').click(function(){
+	console.log('clicked')
+
 	let index = Number($(this).attr('id').substring(7,9));
 	let activeArchive = archiveList[index-1]
-	// console.log(activeArchive)
+	console.log(activeArchive)
 	$('#dimEffectContainer').css('display','block')
 	if(activeArchive.type == 'painting'){
-		$('#dimEffectContainer').prepend(`<img src=${activeArchive.link} class='arcImg'>`)
+		$('#con').prepend(`<img src=${activeArchive.link} class='arcImg'>`)
+		$('#con').append(`<div class='infoText'><span class='bold'>${activeArchive.title}</span>, ${activeArchive.year}<br/>${activeArchive.medium}<br/>${activeArchive.size}</div>`)
 	} else if (activeArchive.type == 'video'){
 		console.log(activeArchive.youtube)
-		$('#dimEffectContainer').prepend(`<object data=${activeArchive.youtube} class='arcImg'></object>`)
+		$('#con').prepend(`<object data=${activeArchive.youtube} class='arcImg'></object>`)
+		$('#con').append(`<div class='infoText'><span class='bold'>${activeArchive.title}</span>, ${activeArchive.year}<br/>${activeArchive.size}<br/>${activeArchive.medium}</div>`)
 	}
 })
 
 
 $('#dimEffectContainer').click(function(){
 	$(this).css('display','none')
-	$('#dimEffectContainer').empty()
+	$('#con').empty()
 })
 
