@@ -29,6 +29,29 @@ body{
 }
 
 
+#aboutContainer {
+	justify-content: space-between;
+}
+
+#statementContainer{
+	height: 70vh;
+	overflow:scroll;
+}
+
+.socialMedia{
+	font-weight: bolder;
+}
+
+a{
+	text-decoration-line: underline;
+	color: black;
+}
+
+#cv{
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
 .archiveIndexBlock{
 	/*filter: grayscale(0%);*/
 	width: 26%;
@@ -253,6 +276,10 @@ body{
 	width: 49%;
 }
 
+.width-30{
+	width: 30%;
+}
+
 .width-20 {
 	width: 20%;
 }
@@ -269,6 +296,11 @@ body{
 .pad-8{
 	padding: 8%;
 }
+
+.padLeft-8{
+	padding-left: 8%;
+}
+
 
 .mb-5{
 	margin-bottom: 5%;
