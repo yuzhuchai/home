@@ -4,6 +4,16 @@ body{
 }
 
 
+.workDisplayContainer{
+	border: black 1px solid; 
+	margin: auto;
+	width: 70vw;
+	height: 40vh;
+	margin-bottom: 50px;
+}
+
+
+
 /*this is all header styling*/
 #headerContainer{
 	background: white;
@@ -199,9 +209,6 @@ a{
 	height: 80vh;
 }
 
-#infoContainer{
-	/*width: 80vh;*/
-}
 
 /*below are function components*/
 
