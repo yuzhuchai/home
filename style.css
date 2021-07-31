@@ -45,7 +45,7 @@ body{
 	margin: auto;
 	width: 70vw;
 	/* height: 40vh; */
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
