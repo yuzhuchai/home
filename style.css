@@ -28,6 +28,9 @@ body{
 	/*z-index: 100;*/
 }
 
+
+
+/* --------this is the work container related styles ------- */
 .textDate{
 	font-style: italic;
 	color: #616060;
@@ -37,15 +40,18 @@ body{
 	text-align: justify;
 }
 
-/* --------this is the work container related styles ------- */
 
+.textExhibition{
+	font-style: italic;
+	color: grey;
+}
 
 .workDisplayContainer{
 	/* border: black 1px solid */
 	margin: auto;
 	width: 70vw;
 	/* height: 40vh; */
-	margin-bottom: 100px;
+	margin-bottom: 150px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -55,7 +61,7 @@ body{
 
 
 .imageInWork{
-	border: black 1px solid; 
+	/* border: black 1px solid;  */
 	/* height: 40vh; */
 	/* width: 40vh; */
 	width: 20vw;
