@@ -7,15 +7,18 @@ body{
 /*this is all header styling*/
 #headerContainer{
 	background: white;
-	padding:3%;
+	padding-left:5%;
+	padding-right:5%;
+	padding-top: 3%;
+	padding-bottom:2%;
 	display:flex;
 	justify-content: space-between;
 	font-weight: bolder;
 	font-size: 1em;
-	position: sticky;
+	position: fixed;
+	width: 90%;
 	top:0;
 	z-index: 100;
-
 }
 
 #menuContainer {
@@ -28,9 +31,22 @@ body{
 	/*z-index: 100;*/
 }
 
+.button{
+	padding:4px;
+}
+
+
+#landingContainer{
+	overflow-x: hidden;
+	margin-top: 150px;
+}
 
 
 /* --------this is the work container related styles ------- */
+
+#worksContainer{
+	margin-top: 150px;
+}
 .textDate{
 	font-style: italic;
 	color: #616060;
@@ -97,15 +113,20 @@ body{
 
 
 
-
-
 #aboutContainer {
 	justify-content: space-between;
+	margin-top: 100px;
+	height: calc(100vh - 100px);
 }
 
+#imageContainer{
+	width: 30%;
+}
 #statementContainer{
+	width: 65%;
 	height: 70vh;
-	overflow:auto;
+	overflow:hidden;
+	overflow-y: scroll;
 }
 
 .socialMedia{
@@ -136,6 +157,7 @@ a{
 	justify-content: space-between;
 	padding-left:8%;
 	padding-right:8%;
+	margin-top: 50px;
 }
 
 
@@ -176,6 +198,8 @@ a{
 	background-image: url('https://yuzhuchai.com/assets/indexpixs/appleIndex.png');
 
 }
+
+
 
 .titleText {
 	position: absolute;
@@ -317,6 +341,13 @@ a{
 	position:fixed;
 }
 
+#archiveEmpty{
+	height: 0;
+}
+
+#archiveEmpty:hover{
+	cursor: default;
+}
 
 
 /*below are styling components*/
@@ -420,4 +451,74 @@ a{
 
 .space-between{
 	justify-content: space-between;
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+	
+	#headerContainer{
+		flex-direction: column;
+	}
+
+	#landing{
+		width: fit-content;
+	}
+
+	#menuContainer{
+		width: 100%;
+		margin-top: 10px;
+	}	
+
+	#landingContainer > img{
+		width: 120%;
+	}
+
+	.workDisplayContainer{
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.imageInWork{
+		width: 100%;
+		height: auto;
+		/* order: 2; */
+	}
+
+	.textInWork{
+		width: 100%;
+	}
+
+	.links{
+		flex-direction: column;
+	}
+
+	.iconImageContainer{
+		width: 10vw;
+	}
+
+	.iconContainer{
+		text-align: right;
+		margin-top: 10px;
+	}
+
+	#imageContainer{
+		display: none;
+	}
+
+	#statementContainer{
+		width: 100%;
+	}
+
+	.archiveIndexBlock{
+		width: 100%;
+	}
+
+	#archivesContainer{
+		margin-top:100px;
+	}
+
+	#aboutContainer{
+		margin-top: 50px;
+		height: calc(100vh - 50px);
+	}
 }
