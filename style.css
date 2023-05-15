@@ -33,6 +33,7 @@ body{
 
 .button{
 	padding:4px;
+	cursor: pointer;
 }
 
 
